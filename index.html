@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch Web Application</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="stopwatch-card">
+
+            <h1>⏱ Stopwatch</h1>
+            <p class="subtitle">Track your time accurately</p>
+
+            <div class="display" id="display">
+                00:00:00.00
+            </div>
+
+            <div class="buttons">
+                <button id="startBtn" class="btn start">
+                    ▶ Start
+                </button>
+
+                <button id="pauseBtn" class="btn pause">
+                    ⏸ Pause
+                </button>
+
+                <button id="lapBtn" class="btn lap">
+                    🏁 Lap
+                </button>
+
+                <button id="resetBtn" class="btn reset">
+                    🔄 Reset
+                </button>
+            </div>
+
+            <div class="laps-section">
+                <h2>Lap Times</h2>
+
+                <div id="laps" class="laps">
+                    <p class="empty-message">
+                        No lap times recorded yet
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
