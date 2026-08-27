@@ -1,0 +1,210 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #160044, #321078, #0879c9);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+}
+
+.stopwatch-card {
+    background: rgba(255, 255, 255, 0.12);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 25px;
+    padding: 40px;
+    text-align: center;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+    color: white;
+    font-size: 42px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #d8d8ff;
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.display {
+    background: rgba(0, 0, 0, 0.25);
+    color: #ffffff;
+    font-size: 58px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    padding: 25px 15px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    font-family: "Courier New", monospace;
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 35px;
+}
+
+.btn {
+    border: none;
+    padding: 13px 22px;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.start {
+    background: #20b86b;
+}
+
+.pause {
+    background: #e49b18;
+}
+
+.lap {
+    background: #287de2;
+}
+
+.reset {
+    background: #e53935;
+}
+
+.laps-section {
+    text-align: left;
+}
+
+.laps-section h2 {
+    color: white;
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+.laps {
+    max-height: 250px;
+    overflow-y: auto;
+    border-radius: 12px;
+}
+
+.empty-message {
+    text-align: center;
+    color: #d6d6e8;
+    padding: 20px;
+}
+
+.lap-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    padding: 14px 18px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    font-size: 17px;
+}
+
+.lap-number {
+    font-weight: bold;
+}
+
+.lap-time {
+    font-family: "Courier New", monospace;
+    font-weight: bold;
+}
+
+.laps::-webkit-scrollbar {
+    width: 6px;
+}
+
+.laps::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.4);
+    border-radius: 10px;
+}
+
+/* Tablet */
+@media (max-width: 600px) {
+
+    .stopwatch-card {
+        padding: 30px 20px;
+    }
+
+    h1 {
+        font-size: 34px;
+    }
+
+    .display {
+        font-size: 42px;
+        letter-spacing: 2px;
+        padding: 20px 10px;
+    }
+
+    .btn {
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 400px) {
+
+    body {
+        padding: 10px;
+    }
+
+    .stopwatch-card {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .display {
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+
+    .buttons {
+        gap: 8px;
+    }
+
+    .btn {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+
+    .lap-item {
+        font-size: 14px;
+    }
+}
