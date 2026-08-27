@@ -1,14 +1,8 @@
-Task-02: Stopwatch Web Application
+Stopwatch Web Application
 
 A simple, responsive, and interactive Stopwatch Web Application built using HTML, CSS, and JavaScript.
 
 This project allows users to start, pause, resume, reset the stopwatch, and record multiple lap times.
-
-Live Demo :
-
-You can deploy this project using GitHub Pages and add your live website link here:
-
-Live Demo: https://your-username.github.io/stopwatch-web-app/
 
 Project Overview :
 
@@ -41,13 +35,6 @@ stopwatch-web-app/
 ├── script.js
 └── README.md
 
-How to Run the Project:
-Step 1: Clone the Repository
-git clone https://github.com/your-username/stopwatch-web-app.git
-Step 2: Open the Project
-cd stopwatch-web-app
-Step 3: Run the Application
-
 Open the index.html file in any modern web browser.
 
 You can also use VS Code Live Server to run the project.
@@ -77,7 +64,8 @@ Application Preview
 
 Add a screenshot of your completed project here:
 
-![Stopwatch Web Application](screenshot.png)
+<img width="1437" height="784" alt="Screenshot 2026-08-27 at 11 17 40" src="https://github.com/user-attachments/assets/5ddf588d-abbf-43fe-b5f3-3d46272d2221" />
+
 Learning Objectives
 
 Through this project, I learned:
